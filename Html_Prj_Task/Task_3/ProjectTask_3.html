@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form a Story</title>
+
+<link rel="stylesheet" href="Style_PrjTask3.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="top">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo" width="300px"; height="300px">
+    </section>
+
+    <section id="main" style="margin-top:0%">
+      <h1>Complete the Form - Complete the Story!</h1>
+      <hr>
+      
+      
+      <form action="story.html" method="get">
+      
+ <table border="2" style="margin-left:35%">
+ 	
+    <tr>     
+      	<td colspan="2"> <label for="animal-1">Animal:</label></td>
+      
+      	<td colspan="2"><input type="text" id="animal-1" name="animal-1" placeholder="animal-1" required="required" /></td>
+    </tr>
+      
+    <tr>
+     	<td colspan="2"><label for="animal-2">Animal:</label></td>
+      
+       	<td colspan="2"><input type="text" id="animal-2" name="animal-1" placeholder="animal-2" required="required" /></td>
+     </tr>
+     
+     <tr> 
+      	<td colspan="2"><label for="animal-3">Animal:</label></td>
+      
+      	<td colspan="2"><input type="text" id="animal-3" name="animal-1" placeholder="animal-3" required="required" /></td>
+     </tr>
+     
+      
+     <tr>
+      	<td colspan="2"><label for="adj-1">Adjective (past tense):</label></td>
+      
+      	<td colspan="2"><input type="text" id="adj-1" name="adj-1" required="required" /></td>
+     </tr>
+     
+      <tr>
+      	<td colspan="2"><label for="verb-1">Verb (ends in -ing):</label></td>
+      
+      	<td colspan="2"><input type="text" id="verb-1" name="verb-1" required="required" /></td>
+      </tr>
+      
+      
+      <tr>
+      	 <td colspan="2" ><span>Yes or No:</span></td>
+     	 <td><input type="radio" id="yes" name="answer" value="yes" required="required"/>
+      		<label for="yes">Yes</label></td>
+      
+      
+      	<td><input type="radio" id="no" name="answer" value="no" required="required"/>
+      		<label for="no">No</label></td>
+      </tr>
+     
+      <tr>
+      	<td colspan="2"><label for="speed">Relative speed (ends in -er):</label></td>
+      	<td colspan="2"><select id="speed" name="speed" required="required">
+      						<option>choose speed</option>
+      						<option value="faster">Faster</option>
+        					<option value="Slower">Slower</option>
+     					</select></td>
+     </tr>       
+      
+      <tr>
+      	<td colspan="2"><label for="quote">Motivational Quote:</label>
+      	<td colspan="2"><input list="quote-choices"  id="quote" name="quote" required="required" /></td>
+      					<datalist id="quote-choices"> 
+      							<option value="winner gets ice cream!"></option>
+      							<option value="Run! Run!"></option>
+      					</datalist></td>
+     	</tr>
+      <tr> 
+      		<td colspan="2"><label for="message">Meaningful Message:</label></td>
+      		<td colspan="2"><textarea id="message" name="message" rows="8" cols="40"></textarea></td>
+     </tr> 
+      
+      <tr>
+      		<td colspan="4"><input type="submit" value="Form My Story!" style="font-size:20px; background-color:#090; color:#FFF; margin-left:35%"/></td>
+      </tr>
+ </form>
+      
+      
+    </section>
+  
+</body>
+</html>
